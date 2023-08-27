@@ -10,7 +10,7 @@
    output = [5, 1, 2, 3, 4]
 */
 
-const arrayLeftRotation = (d: number, arr: number[]) => {
+const rotateLeft = (d: number, arr: number[]) => {
   if (arr.length <= 1) return arr;
   for (let i = 1; i <= d; i++) {
     const removedItem = arr.shift() as number;
@@ -19,4 +19,4 @@ const arrayLeftRotation = (d: number, arr: number[]) => {
   return arr;
 };
 
-console.log(arrayLeftRotation(2, [1, 2, 3, 4, 5]));
+console.log(rotateLeft(2, [1, 2, 3, 4, 5]));
