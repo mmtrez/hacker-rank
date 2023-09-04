@@ -1,4 +1,7 @@
+// ** https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem?isFullScreen=true
+
 type BreakingRecords = (val: number[]) => number[];
+
 const breakingRecords: BreakingRecords = (scores) => {
   const output = [0, 0];
   let highest = scores[0];

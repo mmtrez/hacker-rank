@@ -1,8 +1,4 @@
-/*
-  Complete the 'miniMaxSum' function below.
-  The function accepts INTEGER_ARRAY arr as parameter.
-  https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true
-*/
+// ** https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true
 
 type MiniMaxSum = (val: number[]) => void;
 
@@ -27,5 +23,4 @@ const miniMaxSum: MiniMaxSum = (arr) => {
 };
 
 // Test
-
 miniMaxSum([1, 2, 3, 4, 5]);

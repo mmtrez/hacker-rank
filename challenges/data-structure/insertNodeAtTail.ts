@@ -1,16 +1,11 @@
-/*
-  SinglyLinkedListNode {
-      int data;
-      SinglyLinkedListNode next;
-  }
-*/
+// ** https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem?isFullScreen=true
 
-type Head = null | {
+type LLNode = {
   data: number;
-  next: null | Head;
-};
+  next: LLNode;
+} | null;
 
-type InsertNodeAtTail = (head: Head, data: number) => Head;
+type InsertNodeAtTail = (head: LLNode, data: number) => LLNode;
 
 const createLinkedListNode = (data: number) => ({data: data, next: null});
 
@@ -28,16 +23,6 @@ const insertNodeAtTail: InsertNodeAtTail = (head, data) => {
   }
   // add data at tail
   current.next = newNode;
+
   return head;
 };
-
-// test
-const listItems = [141, 302, 164, 530, 474];
-let linkedList: Head = null;
-for (let i = 0; i < listItems.length; i++) {
-  const linkedListItem = insertNodeAtTail(linkedList, listItems[i]);
-  linkedList = linkedListItem;
-}
-console.info(linkedList);
-
-export {};

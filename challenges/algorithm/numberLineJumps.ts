@@ -1,13 +1,4 @@
-/*
- * Complete the 'kangaroo' function below.
- *
- * The function is expected to return a STRING.
- * The function accepts following parameters:
- *  1. INTEGER x1
- *  2. INTEGER v1
- *  3. INTEGER x2
- *  4. INTEGER v2
- */
+// ** https://www.hackerrank.com/challenges/three-month-preparation-kit-kangaroo/problem?isFullScreen=true
 
 type Kangaroo = (x1: number, v1: number, x2: number, v2: number) => string;
 

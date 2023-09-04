@@ -1,9 +1,4 @@
-/*
-  Complete the 'diagonalDifference' function below.
-  The function is expected to return an INTEGER.
-  The function accepts 2D_INTEGER_ARRAY arr as parameter.
-  https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true 
-*/
+// ** https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true
 
 type DiagonalDifference = (val: number[][]) => number;
 
