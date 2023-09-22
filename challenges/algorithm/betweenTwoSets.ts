@@ -3,8 +3,8 @@
 type GetTotalX = (a: number[], b: number[]) => number;
 
 const getTotalX: GetTotalX = (a, b) => {
-  const min = a.sort((n1, n2) => n1 - n2)[0];
-  const max = b.sort((n1, n2) => n2 - n1)[0];
+  const min = a.sort((n1, n2) => n2 - n1)[0];
+  const max = b.sort((n1, n2) => n1 - n2)[0];
   let testValue = min;
   let resCount = 0;
 
